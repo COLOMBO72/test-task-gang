@@ -7,7 +7,8 @@
     </div>
     <div class="view__down">
       <span class="view-down__price">Средний чек: {{ item.price ? `${item.price}р.` : "нет информации" }}</span>
-    <span class="view-down__address">{{ item.address ? `${item.address}` : 'нет информации' }}</span>
+      <span class="view-down__address">{{ item.address ? `${item.address}` : 'нет информации' }}</span>
+      <img v-if="item.business_lunch" style="padding: 5px; border-radius: 5px; background-color: white; width: 40px;" src="https://cdn-icons-png.flaticon.com/512/76/76463.png" alt="">
     </div>
   </div>
 </template>
@@ -50,6 +51,7 @@ export default {
   cursor: pointer;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter:blur(4px);
  }
  .item-view__wrapper .view__top {
   width: 100%;

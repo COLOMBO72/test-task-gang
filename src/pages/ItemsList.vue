@@ -4,9 +4,10 @@
   </div>
 </template>
 <script>
+import MyLoader from '../components/MyLoader.vue'
 import ItemView from './ItemView.vue'
 export default {
-  components: { ItemView },
+  components: { ItemView, MyLoader },
   props: {
     items: {
       type: Array,
@@ -18,6 +19,7 @@ export default {
 <style scoped>
 .items-list__wrapper {
   width: 100%;
+  padding: 5px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
