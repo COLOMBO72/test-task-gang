@@ -7,7 +7,7 @@
       <span v-if="runAnim1">Просматриваем ваши предпочтения...</span>
       <span v-if="runAnim2">Осматриваем все заведения...</span>
       <span v-if="runAnim3">Представляем вам шедевр...</span>
-      <button @click="redirectToPage">Едем в...</button>
+      <button @click="redirectToPage">Выбрать мне место</button>
     </div>
   </div>
 </template>
